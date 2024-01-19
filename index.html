@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- REMIXICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <!--! === HEADER === -->
+    <div class="background-image">
+        <img src="./assets/images/background.jpg" alt="background image">
+    </div>
+    
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="navbar__logo">
+                <img src="./assets/images/logo.png" alt="" class="navbar__logo-image logo-image">
+            </a>
+
+            <div class="navbar__menu">
+                <ul class="navbar__list">
+                    <li class="navbar__list-item">
+                        <a href="#home" class="navbar__list-link">Home</a>
+                    </li>
+
+                    <li class="navbar__list-item">
+                        <a href="#portfolio" class="navbar__list-link">Portfolio</a>
+                    </li>
+
+                    <li class="navbar__list-item">
+                        <a href="#services" class="navbar__list-link">Services</a>
+                    </li>
+
+                    <li class="navbar__list-item">
+                        <a href="#aboutme" class="navbar__list-link">About me</a>
+                    </li>
+
+                    <li class="navbar__list-item">
+                        <a href="#contacts" class="navbar__list-link">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar__btn-group">
+                <button type="button" class="btn btn--action" id="menu-toggler">
+                    <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.3333 0.999999L0.999918 1" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M17.3333 6.83333L0.999916 6.83333" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M10.3333 12.6667L0.999918 12.6667" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--! === MAIN === -->
+    <main>
+        <!--! === SHOWCASE === -->
+        <section class="showcase" id="home">
+            <div class="showcase__container container">
+                <h1 class="showcase__title title title--main">
+                    Hello! I'm Christian Estibar, a Front 
+                    End Web Developer
+                </h1>
+                <picture class="showcase__image">
+                    <img src="./assets/images/showcase_sm.jpg" alt="picture of myself" class="img-myself">
+                </picture>
+            </div>
+        </section>
+
+        <!--! === PORTFOLIO === -->
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio__container container">
+                <div class="portfolio__metadata section-metadata">
+                    <h2 class="title">My Works</h2>
+                </div>
+                <div class="swiper myswiper">
+                    <div class="swiper-wrapper">
+
+                        
+                        <div class="swiper-slide">
+                            <a href="#"><p>Tribute Page</p></a>
+                            <img src="https://assets1.ignimgs.com/thumbs/userUploaded/2018/5/3/arthur-1525352693518.jpg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#"><p>Tribute Page</p></a>
+                            <img src="https://static.wikia.nocookie.net/reddeadredemption/images/8/87/RDR2_Dutch_van_der_Linde_PC.png/revision/latest?cb=20191216204516" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#"><p>Tribute Page</p></a>
+                            <img src="https://assets1.ignimgs.com/thumbs/userUploaded/2018/5/3/arthur-1525352693518.jpg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#"><p>Tribute Page</p></a>
+                            <img src="https://assets1.ignimgs.com/thumbs/userUploaded/2018/5/3/arthur-1525352693518.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--! === SERVICES === -->
+        <section class="services" id="services">
+            <div class="services__container container">
+                <div class="services__metadata section-metadata">
+                    <h2 class="title">Services that I provide</h2>
+                    <p class="section-metadata__description">
+                       I am a front end website designer, I can also build personal computers, maintain them
+                       troubleshoot them, and more!
+                    </p>
+                </div>
+
+                <div class="services__image-wrapper">
+                    <img src="./assets/images/rtx.jpg" alt="">
+                </div>
+
+                <div class="services__list">
+                    <div class="services__list-divider">
+
+                        <article class="services__list-item">
+                            <i class="ri-code-s-slash-line services__list-icon"></i>
+                                <h3 class="services__list-title title">
+                                    Front End Web Design / Developing
+                                </h3>
+                                <p class="services__list-description">
+                                    I have experience in designing websites by using the languages
+                                    HTML, CSS, and a little bit of JavaScript to implement the 
+                                    that design
+                                </p>
+                        </article>
+
+                        <article class="services__list-item">
+                            <i class="ri-computer-line services__list-icon"></i>
+                                <h3 class="services__list-title title">
+                                    Personal Computer Building
+                                </h3>
+                                <p class="services__list-description">
+                                    I have knowledge in building computers parts by parts, I can 
+                                    do overclocking, underclocking, and more.
+                                </p>
+                        </article>
+
+                        <article class="services__list-item">
+                            <i class="ri-brush-2-line services__list-icon"></i>
+                                <h3 class="services__list-title title">
+                                    Personal Computer Troubleshooting and Maintenance
+                                </h3>
+                                <p class="services__list-description">
+                                    I have knowledge on troubleshooting computers, such as No boot,
+                                    Overheating, Hardware error and more. I can also deepclean computers
+                                    and maintain them regularly.
+                                </p>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--! === ABOUT === -->
+        <section class="about" id="aboutme">
+            <div class="about__container container">
+                <div class="about__information">
+                    <h2 class="about__information-title title">
+                        About Me
+                    </h2>
+                    <p class="about__information-description">
+                        Hello! My name is Christian Estibar, I am 21 years old currently living
+                        in Baguio City, Philippines. My hobbies are playing video games, watching movies,
+                        and programming. The genres of games that I am playing are asymmetrical horror,
+                        fps, open-world, and role playing games. My favorite games are Red Dead Redemption 2,
+                        Dead by Daylight, Skyrim, and more. I am also a big fan of Game of Thrones, The Lord of
+                        The Rings, Breaking Bad, Stranger Things, and more.
+                    </p>
+                    <a href="#" class="btn btn--text btn-green">Social Medias and Contacts</a>
+                </div>
+
+                <div class="about__images">
+                    <img src="./assets/images/about1.jpg" alt="" class="about__images-image
+                    about__images-image--top">
+
+                    <img src="./assets/images/about2.jpg" alt="" class="about__images-image
+                    about__images-image--bottom">
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!--! === FOOTER === -->
+
+
+    <!-- SWIPERJS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
