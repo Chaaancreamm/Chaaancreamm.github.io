@@ -250,6 +250,9 @@ main {
 .showcase__image {
     display: inline-block;
     transform: translateY(-1rem);
+    border: solid;
+    border-color: var(--light-clr-2);
+    border-radius: 100px;
 }
 
 /*! === PORTFOLIO === */
@@ -267,6 +270,17 @@ main {
 .swiper-slide {
     width: 30rem;
     height: 30rem;
+}
+
+.swiper-slide > a {
+    font-family: var(--title-font);
+    color: var(--light-clr-2);
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.swiper-slide > a:hover {
+    color: orange;
 }
 
 .swiper-slide img {
